@@ -1,6 +1,6 @@
 document.getElementById("idheader").innerHTML = `
 <div class="header-logo">
-                    <img src="img/logo3.jpg" width="50px" height="50px" alt="">
+                    <img src="img/logo3.jpg" width="200px" height="200px" alt="">
 
  </div>
                 <div class="header-nav">
