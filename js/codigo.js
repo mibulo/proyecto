@@ -46,3 +46,32 @@ document.getElementById("idfooter").innerHTML = `
     <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
 </ul>
 `
+
+$(document).ready(function() {
+
+    let url = "https://randomuser.me/api/?results=2";
+    let p = "";
+
+    fetchInformation(url);
+
+    function fetchInformation(url) {
+        fetch(url)
+            .then((response) => response.json())
+            .then(function(data) {
+                data
+                data.results.forEach(persona => {
+
+                    p = `<div>
+                        <img src="${persona.picture.medium}" class="img-rounded" alt="image">
+                        
+                        <p>${persona.name.title}  ${persona.name.first} ${persona.name.last}</p>
+                        <p>Correo Electronico: ${persona.email}</p>
+                        <p>Telefono Celular: ${persona.cell} </p>
+                    </div>`;
+                    $("#resultado").append(p);
+
+                });
+            })
+    }
+
+});
