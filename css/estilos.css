@@ -147,6 +147,10 @@
             .arituculo-item5 {
                 grid-area: N5;
             }
+              .articulo-item5>h1 {
+                background-color: rgb(46, 66, 173);
+                color: white;
+            }
             
             .articuloNovedades {
                 padding: 1%;
