@@ -113,6 +113,62 @@
                 color: black;
             }
             /* Fin defincion de estructura de novedes, servicios y contacto  */
+/*Definicion propiedades novedades.html*/
+            
+            .grid-novedades {
+                display: grid;
+                width: 90%;
+                height: auto;
+                grid-area: "N0" "N1" "N2" "N3" "N4" "N5";
+            }
+            
+            .arituculo-item0 {
+                grid-area: N0;
+                height: auto;
+            }
+            
+            .arituculo-item1 {
+                grid-area: N1;
+            }
+            
+            .arituculo-item2 {
+                grid-area: N2;
+                position: relative;
+            }
+            
+            .arituculo-item3 {
+                grid-area: N3;
+            }
+            
+            .arituculo-item4 {
+                grid-area: N4;
+            }
+            
+            .arituculo-item5 {
+                grid-area: N5;
+            }
+            
+            .articuloNovedades {
+                padding: 1%;
+                width: fit-content;
+            }
+            
+            .imagenNota {
+                position: relative;
+            }
+            
+            .articuloNovedades>p::first-letter {
+                color: tomato;
+            }
+            
+            .articuloNovedades>h4::first-line {
+                background-color: yellow;
+            }
+            
+            .articuloNovedades>h4 {
+                padding: 1%;
+            }
+            /*fin definicion novedades.html*/
             
             .grid-container {
                 display: grid;
