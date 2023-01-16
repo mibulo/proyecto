@@ -49,7 +49,7 @@ document.getElementById("idfooter").innerHTML = `
 
 $(document).ready(function() {
 
-    let url = "https://randomuser.me/api/?results=2";
+    let url = "https://randomuser.me/api/?results=4";
     let p = "";
 
     fetchInformation(url);
